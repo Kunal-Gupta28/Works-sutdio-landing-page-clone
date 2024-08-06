@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.page_dimension{
+    height: 100vh;
+    width: 100vw;
+}
+/* fonts */
+@font-face {
+    font-family: 'FreightBigProBook';
+    src: url('./font/FreightBigProBook-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProBlack';
+    src: url('./font/FreightBigProBlack-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProMedium';
+    src: url('./font/FreightBigProMedium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProLight';
+    src: url('./font/FreightBigProLight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProBold';
+    src: url('./font/FreightBigProBold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBlack';
+    src: url('./font/FreightBigProBlack-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBold';
+    src: url('./font/FreightBigProBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProSemibold';
+    src: url('./font/FreightBigProSemibold-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProMedium';
+    src: url('./font/FreightBigProMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProLight';
+    src: url('./font/FreightBigProLight-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBook';
+    src: url('./font/FreightBigProBook-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProSemibold';
+    src: url('./font/FreightBigProSemibold-Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* loader */
+#loader{
+    background-color: #000000;
+    color: white; 
+    z-index: 10;
+}
+#loader div:nth-child(2){
+    height: 94vh;
+}
+#loader h1{
+    font-size: 6.6vw;
+    font-family: 'FreightBigProLight';
+    font-weight: 300;
+    line-height: 4.8vw;
+} 
+#loader em{
+    font-family: 'FreightBigProLight';
+    font-weight: 300;
+    font-style: italic;
+} 
+/* navbar */
+nav{
+    z-index: 9;
+}
+
+ /* page1 */
+#page1{
+    background-color: #F5E41B;
+}
+#page1 div:first-child{
+    height: 94vh;
+}
+#page1 h1{
+    font-size: 6.6vw;
+    font-family: 'FreightBigProLight',sans-serif;
+    font-weight: 300;
+    line-height: 4.8vw;
+} 
+#page1 em{
+    font-family: 'FreightBigProLight',sans-serif;
+    font-weight: 300;
+    font-style: italic;
+} 
+ /* page2 */
+#page2{
+    background-color: #000000;
+}
+#container > div{
+    height: 5vw;
+}
+#container > div > span{
+    font-family: 'FreightBigProLight',sans-serif;
+    font-size: 7vw;
+    z-index: 4;
+}
+#container > div > span:hover{
+    font-family: 'FreightBigProLight',sans-serif;
+    font-style: italic;
+    cursor: pointer;
+    color: black !important;
+}
+#container > div > div{
+    height: 30px;
+    width: 100vw;
+    background-color: #F5E41B;
+}
+#container p{
+    animation: marquee 20s linear infinite;
+}
+#container p span{
+    margin: 0px 2vw;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+/* page3 */
+#page3 .row div{
+    width: 31.5vw;
+}
+#page3 .row img{
+    background-color: #D9D9D9;    
+}
+#page3 .row img:hover{
+    cursor: pointer;
+    filter: brightness(0);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;    
+}
+/* footer  */
+footer{
+    height: 120px;
+    color: white;
+    background-color: black;
+}
